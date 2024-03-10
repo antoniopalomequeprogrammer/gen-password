@@ -1,5 +1,3 @@
-import React from "react";
-import Card from "@/components/Card";
 const AboutPage = () => {
   return (
     <div className="p-4">

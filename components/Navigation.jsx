@@ -1,11 +1,15 @@
+"use client";
 import Link from "next/link";
+import { useState } from "react";
 
 const Navigation = () => {
+  const [openMenu, setOpenMenu] = useState(true);
   return (
     <>
       <div className="flex h-16 items-center justify-between">
         <button
-          className="text-slate-500  hover:bg-sky-500 hover:text-slate-100 rounded p-1 -ml-1 transition-colors
+          onClick={() => setOpenMenu(!openMenu)}
+          className="text-slate-500 md:hidden  hover:bg-sky-500 hover:text-slate-100 rounded p-1 -ml-1 transition-colors
       focus:ring-2 focus:ring-slate-200
       "
         >
@@ -26,7 +30,7 @@ const Navigation = () => {
         </button>
 
         <div className="flex">
-          <a className="text-green-600 hover:rotate-6 duration-200" href="#">
+          <a className="text-green-600 hover:rotate-6 duration-200 md:hidden" href="#">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -51,29 +55,19 @@ const Navigation = () => {
           <button className="text-slate-600 px-3 py-2 hover:text-sky-500 transition-colors">
             <Link href="/blog">Blog</Link>
           </button>
-
-          <button className="text-slate-600 px-3 py-2 hover:text-sky-500 transition-colors">
-            <Link href="/services">Skills</Link>
-          </button>
         </div>
       </div>
 
-      <div className="space-y-1 pb-3 border-t pt-2  md:hidden">
-        <a href="#" class="block text-white rounded-md bg-sky-500 px-3 py-2">
-          Home
-        </a>
-        <a
-          href="#"
+      <div className={`space-y-1 pb-3 border-t pt-2 ${openMenu ? '' : 'hidden transition-opacity'} md:hidden`}>
+        <Link href="/" class="block text-white rounded-md bg-sky-500 px-3 py-2">
+          Sobre Mí
+        </Link>
+        <Link
+          href="/blog"
           class="text-slate-700 hover:bg-sky-500 hover:text-white block px-3 py-2 rounded-md transition-colors"
         >
-          Projects
-        </a>
-        <a
-          href="#"
-          class="text-slate-700 hover:bg-sky-500 hover:text-white block px-3 py-2 rounded-md transition-colors"
-        >
-          About
-        </a>
+          Blog
+        </Link>
       </div>
     </>
   );

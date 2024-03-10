@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = () => {
   return (
-    <article className="rounded bg-white shadow overflow-hidden">
+    <article className="rounded bg-white shadow overflow-hidden cursor-pointer">
         <div className="h-72">
           <img
             className="h-full w-full object-cover object-center"
