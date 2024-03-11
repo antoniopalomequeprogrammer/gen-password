@@ -2,13 +2,19 @@ const AboutPage = () => {
   return (
     <div className="p-4">
       {/* Sobre mí */}
-      <div className="mt-4 grid  max-w-6xl mx-auto md:grid-cols-2 gap-4 lg:grid-cols-2 bg-white rounded shadow p-5">
+      <div className="mt-4 grid  max-w-6xl mx-auto md:grid-cols-2 gap-4 lg:grid-cols-2 bg-white rounded shadow p-5 items-center">
         <div className="">
           <img
             className="rounded-full w-[300px] h-[300px] mx-auto"
             src="https://media.licdn.com/dms/image/D4D03AQEdKXW2iWJ9cQ/profile-displayphoto-shrink_800_800/0/1709592661025?e=1715817600&v=beta&t=-J8Xey8lWXQeN9tytNZRbRFixqyALGQiwDJAchWnoDI"
             alt="placeholder"
           />
+          <div className="flex justify-center mt-4">
+          <a href="https://www.linkedin.com/dms/prv/vid/D4E06AQHvkt9xxi3OmA/messaging-attachmentFile/0/1708972580290?m=AQKexUf6kjibvAAAAY4u3KjD1GOXUX_KvciRgQJ7bLn0z8b_1q55v30hTw&ne=1&v=beta&t=hZPgn2KlaJPlpzxQv2VrDNkFXVItDluQZ8oQrLvRBl8&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BQLYbSL0XQrue%2Bh03X2Q%2BgQ%3D%3D" className="bg-blue-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded transition-colors">
+            Descargar CV
+            
+          </a>
+          </div>
         </div>
         <div>
           <div>
@@ -17,10 +23,27 @@ const AboutPage = () => {
             </h1>
           </div>
           <div className="leading-6 mt-8">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
-            repudiandae alias pariatur quidem aperiam inventore laboriosam fugit
-            quae necessitatibus natus, veniam ea. Tempora, ipsam voluptatum
-            autem et libero quam iure!
+            <p className="mb-6 text-slate-500">Apasionado por el código limpio, el café, y el arte de crear
+            experiencias digitales, a lo largo de mi trayectoria profesional he
+            tenido la suerte de trabajar en diversos proyectos desde creación de
+            plugins para wordpress, como extracción de datos con Python haciendo
+            uso de Web scraping. 
+            </p>
+
+            <p className="mb-6 text-slate-500">
+            Actualmente en mi empresa me dedico a la
+            creación de wireframes, creación de apis, utilizando principios
+            SOLID, creación de la parte del lado del cliente utilizando Js y
+            ReactJs, sabiendo crear componentes reutilizables, y controlar la
+            gestión global del estado utilizando redux, recoil o useContext. 
+            </p>
+            <p className="mb-6 text-slate-500">
+            He trabajado con multitud de librerías entre las que destaco stripe,
+            realizando un marketplace para la ciudad donde resido. También me
+            dedico a la creación y configuración de servidores, para el
+            despliegue de proyectos, tanto con ubuntu y centos, configurando
+            todo lo necesario para el despliegue a producción.
+            </p>
           </div>
 
           <div className="grid gap-4 mt-10 grid-cols-5 justify-evenly">
@@ -187,10 +210,25 @@ const AboutPage = () => {
       {/* Cursos */}
       <div className="mt-4 grid  max-w-6xl mx-auto  bg-white rounded shadow p-5">
         <div>
-          <h2 className="text-slate-800 text-xl mb-3 w-full gap-3">Cursos y certificados</h2>
+          <h2 className="text-slate-800 text-xl mb-3 w-full gap-3">
+            Cursos y certificados
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-3">
-            <img className="rounded mt-5 shadow " src="https://media.licdn.com/dms/image/C4D2DAQHHduxtBNHf6Q/profile-treasury-image-shrink_800_800/0/1616101824579?e=1710680400&v=beta&t=ST25lRzVFJime5Nh6jiVeDgEisxaeWJFrYjugWFi37M" alt="Curso de Laravel" />
-            <img className="rounded mt-5 shadow " src="https://media.licdn.com/dms/image/C4E2DAQHfoXUaFsuaQQ/profile-treasury-image-shrink_800_800/0/1628265852020?e=1710680400&v=beta&t=feqMk-Yhv67Lh0XK3hnXw4TUUlcUrDJkMMWWBpM2YAo" alt="Curso de React" />
+            <img
+              className="rounded mt-5 shadow "
+              src="https://media.licdn.com/dms/image/C4D2DAQHHduxtBNHf6Q/profile-treasury-image-shrink_800_800/0/1616101824579?e=1710680400&v=beta&t=ST25lRzVFJime5Nh6jiVeDgEisxaeWJFrYjugWFi37M"
+              alt="Curso de Laravel"
+            />
+            <img
+              className="rounded mt-5 shadow "
+              src="https://media.licdn.com/dms/image/C4E2DAQHfoXUaFsuaQQ/profile-treasury-image-shrink_800_800/0/1628265852020?e=1710680400&v=beta&t=feqMk-Yhv67Lh0XK3hnXw4TUUlcUrDJkMMWWBpM2YAo"
+              alt="Curso de React"
+            />
+            <img
+              className="rounded mt-5 shadow "
+              src="https://media.licdn.com/dms/image/C4E22AQEXSNVvvmLUgg/feedshare-shrink_1280/0/1660768014795?e=1712793600&v=beta&t=Q8QWqQEhTaDPrBVDWENZgVXdYA_vpm43qs8DuzO-ebo"
+              alt="Creación de plugins wordpress"
+            />
           </div>
         </div>
       </div>
