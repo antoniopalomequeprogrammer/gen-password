@@ -53,9 +53,9 @@ const Navigation = () => {
             <Link href="/">Sobre Mí</Link>
           </button>
 
-          <button className="text-slate-600 px-3 py-2 hover:text-sky-500 transition-colors">
-            <Link href="/blog">Blog</Link>
-          </button>
+          {/* <button disabled className="text-slate-600 px-3 py-2 hover:text-sky-500 transition-colors">
+            <Link href="/blog">Proyectos</Link>
+          </button> */}
         </div>
       </div>
 
@@ -63,13 +63,13 @@ const Navigation = () => {
         <Link href="/" onClick={() => setBtnActivo('/')} class={`block  rounded-md ${btnActivo == '/' ? 'bg-sky-500 text-white' : 'text-black'} px-3 py-2`}>
           Sobre Mí
         </Link>
-        <Link
+        {/* <Link
           href="/blog"
           onClick={() => setBtnActivo('/blog')}
           class={`text-slate-700 hover:bg-sky-500 ${btnActivo == '/blog' ? 'bg-sky-500 text-white' : 'text-black'}  hover:text-white block px-3 py-2 rounded-md transition-colors`}
         >
-          Blog
-        </Link>
+          Proyectos
+        </Link> */}
       </div>
     </>
   );

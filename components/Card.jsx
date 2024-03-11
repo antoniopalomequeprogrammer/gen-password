@@ -1,7 +1,7 @@
-import React from "react";
-
+import Link from 'next/link'
 const Card = () => {
   return (
+    // <Link href="/blog/1">
     <article className="rounded bg-white shadow overflow-hidden cursor-pointer">
         <div className="h-72">
           <img
@@ -42,6 +42,7 @@ const Card = () => {
         </div>
       
       </article>
+      // </Link>
   );
 };
 
