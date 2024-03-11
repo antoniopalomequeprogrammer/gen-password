@@ -4,6 +4,7 @@ import { useState } from "react";
 
 const Navigation = () => {
   const [openMenu, setOpenMenu] = useState(true);
+  const [btnActivo, setBtnActivo] = useState("/");
   return (
     <>
       <div className="flex h-16 items-center justify-between">
@@ -59,12 +60,13 @@ const Navigation = () => {
       </div>
 
       <div className={`space-y-1 pb-3 border-t pt-2 ${openMenu ? '' : 'hidden transition-opacity'} md:hidden`}>
-        <Link href="/" class="block text-white rounded-md bg-sky-500 px-3 py-2">
+        <Link href="/" onClick={() => setBtnActivo('/')} class={`block  rounded-md ${btnActivo == '/' ? 'bg-sky-500 text-white' : 'text-black'} px-3 py-2`}>
           Sobre Mí
         </Link>
         <Link
           href="/blog"
-          class="text-slate-700 hover:bg-sky-500 hover:text-white block px-3 py-2 rounded-md transition-colors"
+          onClick={() => setBtnActivo('/blog')}
+          class={`text-slate-700 hover:bg-sky-500 ${btnActivo == '/blog' ? 'bg-sky-500 text-white' : 'text-black'}  hover:text-white block px-3 py-2 rounded-md transition-colors`}
         >
           Blog
         </Link>

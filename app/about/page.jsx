@@ -23,7 +23,7 @@ const AboutPage = () => {
             autem et libero quam iure!
           </div>
 
-          <div className="grid gap-4 mt-10 grid-cols-5">
+          <div className="grid gap-4 mt-10 grid-cols-5 justify-evenly">
             <svg
               className="w-8 h-8 "
               role="img"
